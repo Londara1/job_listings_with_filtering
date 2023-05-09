@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background: #EFFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/bg-header-mobile.svg), linear-gradient(#5ca5a5 156px, #effafa 156px);
+    background-repeat: no-repeat;
+    padding: 212px 0px 34px 0px;
+    background-position: top;
+}
+
+.jobBox {
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    height: 257px;
+    background: #FFFFFF;
+    padding-left: 19px;
+    padding-right: 24px;
+    box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.icon {
+    position: absolute;
+    width: 48px;
+    margin-top: -24px;
+    box-shadow: inset 0px 0px 35px rgba(0, 0, 0, 0.0452633);
+    border-radius: 50%;
+}
+
+.companyName {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 12px;
+    color: #5CA5A5;
+    margin-right: 33px;
+}
+
+.positionName {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: #2B3939;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.positionName:hover {
+    color: #5CA5A5;
+}
+
+.descriptionWrapper {
+    display: flex;
+    align-items: center;
+    color: #B7C4C4;
+    margin-top: 8px;
+    gap: 10px;
+}
+
+.postedAt, .contractTime, .location {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7C8F8F;
+}
+
+.lineDiv {
+    width: 100%;
+    border: 1px solid #B7C4C4;
+    margin-top: 15px;
+    margin-bottom: 16px;
+}
+
+.languagesDiv {
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.buttonStyles {
+    border: none;
+    border-radius: 4px;
+    padding: 5px 11px 3px 8px;
+    color: #5CA5A5;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.123077px;
+    cursor: pointer;
+}
+
+.buttonStyles:hover {
+    background: #5CA5A5;
+    color: #FFFFFF;
+}
+
+.tagsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.borderStyle {
+    border-left: 5px solid #5CA5A5;
+}
+
+.nameAndSpecial {
+    display: flex;
+    align-items: center;
+    padding-top: 39px;
+
+}
+
+.newStatus {
+    background: #5CA5A5;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.107692px;
+    text-transform: uppercase;
+    width: 51px;
+    height: 24px;
+    padding: 7px 8px 3px 8px;
+}
+
+.featuredStatus {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.107692px;
+    text-transform: uppercase;
+    background: #2B3939;
+    border-radius: 12px;
+    color: #FFFFFF;
+    padding: 6px 8px 4px 9px;
+    margin-left: 8px;
+}
+
+.filterBoxWrapper {
+    background: #FFFFFF;
+    width: 327px;
+    display: flex;
+    padding: 20px 40px 20px 35px;
+    box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+    border-radius: 5px;;
+}
+
+.filterBox {
+    display: flex;
+    width: 327px;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.filterButtons {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding-left: 8px;
+    border: none;
+    color: #5CA5A5;
+    background-color: #EFFAFA;
+    border-radius: 4px;
+}
+
+.xStyle {
+    background: #5CA5A5;
+    border-radius: 0px 4px 4px 0px;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.clearButton {
+    background: #FFFFFF;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.123077px;
+    color: #7C8F8F;
+    cursor: pointer;
+}
+
+.clearButton:hover {
+    text-decoration-line: underline;
+    color: #5CA5A5;
+}
+
+
+@media (min-width: 1440px) {
+    body {
+        padding: 212px 0px 120px 0px;
+        background-image: url(./images/bg-header-desktop.svg), linear-gradient(#5ca5a5 156px, #effafa 156px);
+    }
+
+    .filterBox {
+        width: 1110px;
+    }
+
+    .jobBox {
+        width: 1110px;
+        height: 152px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .lineDiv {
+        display: none;
+    }
+
+    .icon {
+        width: 88px;
+        height: 88px;
+        margin-top: 0;
+        position: unset;
+    }
+
+    .tagsWrapper {
+        align-items: center;
+    }
+
+    .topSideWrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 24px; 
+    }
+
+    .sideAndTagWrapper {
+        display: flex;
+    }
+
+    .topSideWrapperWithPhoto {
+        display: flex;
+        align-items: center;
+    }
+
+    .nameAndSpecial {
+        padding-top: 0;
+    }
+
+    .companyName {
+        margin-right: 15px;
+        font-size: 18px;
+        line-height: 17px;
+    }
+
+    .positionName {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .postedAt, .contractTime, .location {
+        font-size: 18px;
+    }
+
+    .filterBoxWrapper {
+        width: 1110px;
+    }
+}
